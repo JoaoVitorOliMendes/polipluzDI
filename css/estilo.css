@@ -1,0 +1,66 @@
+:root {
+    --poli-dark-purple: #1b0459;
+    --poli-purple: #29185a;
+    --poli-light-purple: #392E8C;
+    --poli-light-light-purple: rgb(89, 74, 197);
+    --poli-dark-yellow: #FBB80F;
+    --poli-deep-orange: #FF5722;
+    --poli-shadow: #00000085;
+    --poli-white: #fff;
+    --poli-gray: rgb(201, 201, 201);
+}
+
+body {
+    font-family: 'JetBrains Mono';
+    background-color: var(--poli-dark-purple);
+    margin: 0;
+    padding: 0;
+}
+body > div {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--poli-shadow)
+}
+
+.polip_button {
+    padding: 0.5em 1em;
+    border-radius: 12px;
+    background-color: var(--poli-purple);
+    color: var(--poli-white);
+    border: none;
+    transition: 0.05s;
+}
+.polip_button:hover {
+    scale: 1.05;
+    background-color: var(--poli-light-purple);
+}
+
+.polip_txt {
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    border: 3px solid var(--poli-purple);
+    background-color: var(--poli-light-light-purple);
+    color: var(--poli-white);
+    -webkit-transition : border 0.1s ease-out;
+    -moz-transition : border 0.1s ease-out;
+    -o-transition : border 0.1s ease-out;
+    transition : border 0.1s ease-out;
+}
+
+.polip_txt:focus {
+    border: 3px solid var(--poli-gray) !important;
+}
+
+::placeholder {
+    color: var(--poli-gray);
+    opacity: 1;
+}
+
+.poli_container {
+    height: 100vh;
+}
+
+textarea:focus, input:focus{
+    outline: none !important;
+}
