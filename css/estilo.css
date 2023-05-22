@@ -6,8 +6,10 @@
     --poli-dark-yellow: #FBB80F;
     --poli-deep-orange: #FF5722;
     --poli-shadow: #00000085;
+    --poli-black: #000000;
     --poli-white: #fff;
     --poli-gray: rgb(201, 201, 201);
+    --poli-dark-gray: rgb(100, 100, 100);
 }
 
 body {
@@ -63,4 +65,40 @@ body > div {
 
 textarea:focus, input:focus{
     outline: none !important;
+}
+
+.input-icons i {
+    position: absolute;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.icon {
+    margin: 15px;
+    margin-left: 225px;
+    color: var(--poli-gray);
+}
+  
+.input-field {
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.poli_circle {
+    padding: 0.5em;
+    border: solid var(--poli-black) 0.25em;
+    border-radius: 100%;
+    color: var(--poli-black);
+}
+
+.poli_card {
+    border: solid var(--poli-dark-gray) 0.25em;
+    padding: 2rem;
+    border-radius: 14px;
+    background-color: var(--poli-gray);
+    width: 15rem;
+    height: 15rem;
 }
