@@ -3,6 +3,7 @@
     --poli-purple: #29185a;
     --poli-light-purple: #392E8C;
     --poli-light-light-purple: rgb(89, 74, 197);
+    --poli-light-light-light-purple: rgb(184, 175, 253);
     --poli-dark-yellow: #FBB80F;
     --poli-deep-orange: #FF5722;
     --poli-shadow: #00000085;
@@ -19,14 +20,20 @@ body {
     padding: 0;
 }
 body > div {
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    position: absolute;
-    background-color: var(--poli-shadow)
+    background-color: var(--poli-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body > div * {
+    margin: 1em 0;
 }
 
 .polip_button {
-    padding: 0.5em 1em;
+    padding: 0.75em 1.25em;
     border-radius: 12px;
     background-color: var(--poli-purple);
     color: var(--poli-white);
@@ -40,7 +47,7 @@ body > div {
 
 .polip_txt {
     border-radius: 10px;
-    padding: 0.5em 1em;
+    padding: 0.75em 1.25em;
     border: 3px solid var(--poli-purple);
     background-color: var(--poli-light-light-purple);
     color: var(--poli-white);
@@ -49,56 +56,66 @@ body > div {
     -o-transition : border 0.1s ease-out;
     transition : border 0.1s ease-out;
 }
-
 .polip_txt:focus {
     border: 3px solid var(--poli-gray) !important;
 }
-
 ::placeholder {
     color: var(--poli-gray);
     opacity: 1;
 }
-
-.poli_container {
-    height: 100vh;
-}
-
 textarea:focus, input:focus{
     outline: none !important;
 }
 
-.input-icons i {
-    position: absolute;
-}
-  
 .input-icons {
     width: 100%;
-    margin-bottom: 10px;
+    position: relative;
 }
-  
-.icon {
-    margin: 15px;
-    margin-left: 225px;
+.input-icons i {
+    position: absolute;
+    right: 5%;
+    top: 15%;
     color: var(--poli-gray);
 }
-  
-.input-field {
-    width: 100%;
+.input-icons input {
     margin-bottom: 3px;
 }
 
-.poli_circle {
+.poli_back {
     padding: 0.5em;
-    border: solid var(--poli-black) 0.25em;
+    border: solid var(--poli-dark-yellow) 0.25em;
     border-radius: 100%;
-    color: var(--poli-black);
+    color: var(--poli-dark-yellow);
 }
 
 .poli_card {
-    border: solid var(--poli-dark-gray) 0.25em;
-    padding: 2rem;
+    border: solid var(--poli-light-purple) 0.25em;
+    padding: 1em;
     border-radius: 14px;
-    background-color: var(--poli-gray);
-    width: 15rem;
-    height: 15rem;
+    background-color: var(--poli-light-light-light-purple);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.poli_card > i.fa-camera {
+    font-size: 2.5em;
+}
+
+.poli_card .poli_card_icons {
+    font-size: 2em;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.poli_card .poli_card_icons i {
+    margin: 0;
+}
+.poli_card .poli_card_text {
+    font-size: 0.75em;
+    height: 100%;
 }
