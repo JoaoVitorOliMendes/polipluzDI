@@ -88,7 +88,7 @@ textarea:focus, input:focus{
     margin-bottom: 0;
 }
 .polip_datalist {
-    width: 100px;
+    width: 100%;
     margin: 0;
     background-color: var(--poli-purple);
     position: absolute;
@@ -173,4 +173,51 @@ textarea:focus, input:focus{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.desc_profile {
+    align-items: baseline;
+    text-align: left;
+    color: var(--poli-gray);
+    margin: 0;
+    padding: 0;
+}
+.profile_img {
+    width: 100%;
+    flex-grow: 1;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+}
+
+.back_icon {
+    margin-right: 11px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: end;
+    width: 100%;
+}
+
+.person_img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    margin-left: 10px;
+    float: left;
+    object-fit: cover;
+}
+
+.list_profile {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info_profile {
+    margin: 10px;
+    color: var(--poli-gray);
+    display: inline;
+}
+
+a {
+    margin: 0 !important;
 }

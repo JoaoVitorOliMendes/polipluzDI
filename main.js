@@ -22,4 +22,17 @@ input.oninput = function() {
         }
     };
 }
-  
+
+function nextPage1() {
+    document.getElementById("profile_img1").onclick = location.href = "./info_profiles/info_profile1.html"
+}
+
+
+function nextPage2() {
+    document.getElementById("profile_img2").onclick = location.href = "./info_profiles/info_profile2.html"
+}
+
+
+function nextPage3() {
+    document.getElementById("profile_img3").onclick = location.href = "./info_profiles/info_profile3.html"
+}
