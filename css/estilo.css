@@ -20,7 +20,7 @@ body {
     padding: 0;
 }
 body > div {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: var(--poli-shadow);
     display: flex;
@@ -46,10 +46,11 @@ body > div * {
 }
 
 .polip_txt {
-    border-radius: 10px;
-    padding: 0.75em 1.25em;
+    border-radius: 14px;
+    padding: 1em 1.5em;
     border: 3px solid var(--poli-purple);
     background-color: var(--poli-light-light-purple);
+    font-size: 1rem;
     color: var(--poli-white);
     -webkit-transition : border 0.1s ease-out;
     -moz-transition : border 0.1s ease-out;
@@ -67,6 +68,10 @@ textarea:focus, input:focus{
     outline: none !important;
 }
 
+.input-forms {
+    min-width: 15em;
+    z-index: 2;
+}
 .input-icons {
     width: 100%;
     position: relative;
@@ -74,12 +79,40 @@ textarea:focus, input:focus{
 .input-icons i {
     position: absolute;
     right: 5%;
-    top: 15%;
+    top: 27.5%;
     color: var(--poli-gray);
 }
 .input-icons input {
-    margin-bottom: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0;
 }
+.polip_datalist {
+    width: 100px;
+    margin: 0;
+    background-color: var(--poli-purple);
+    position: absolute;
+    border-radius: 0 0 14px 14px;
+    border-top: none;
+    padding: 20px 0 0 0;
+    top: 75%;
+    z-index: -1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}  
+.polip_datalist option {
+    margin: 0;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+    padding: 1em 0.5em;
+    color: var(--poli-white);
+    font-size: 0.85em;
+    cursor: pointer;
+}
+.polip_datalist option:hover, .active{
+    background-color: var(--poli-light-purple) !important;
+}  
 
 .poli_back {
     padding: 0.5em;
@@ -93,11 +126,11 @@ textarea:focus, input:focus{
     padding: 1em;
     border-radius: 14px;
     background-color: var(--poli-light-light-light-purple);
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    min-height: 200px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
 }
 .poli_card > i.fa-camera {
@@ -106,16 +139,38 @@ textarea:focus, input:focus{
 
 .poli_card .poli_card_icons {
     font-size: 2em;
-    height: 25%;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 0;
+    margin: 0.5em 0;
 }
 .poli_card .poli_card_icons i {
     margin: 0;
 }
 .poli_card .poli_card_text {
-    font-size: 0.75em;
-    height: 100%;
+    align-self: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.upper_btns {
+    float: left;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+
+.fill {
+    flex-grow: 1;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

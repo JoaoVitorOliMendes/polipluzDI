@@ -6,38 +6,61 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='css/estilo.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src='main.js'></script>
+    <script src="https://kit.fontawesome.com/b1e8712c98.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div>
-        <button class="polip_button">Button</button>
-
-        <input type="text" class="polip_txt" placeholder="Input">
-
-        <form>
-            <div class="input-icons">
-                <i class="fa fa-search"></i>
-                <input class="polip_txt" placeholder="Escolha um Serviço" type="text">
-            </div>
-        </form>
-        
-        <i class="fas fa-arrow-left poli_back"></i>
-        
-        <div class="poli_card">
-            <i class="fas fa-camera"></i>
+        <div class="upper_btns">
+            <i class="fas fa-arrow-left poli_back"></i>
         </div>
-        <div class="poli_card">
-            <div class="poli_card_icons">
-                <i class="fas fa-circle-info"></i>
-                <i class="fas fa-trash"></i>
+        <div class="fill">
+            <form class="input-forms">
+                <div class="input-icons">
+                    <i class="fa fa-search"></i>
+                    <input class="polip_txt" placeholder="Escolha um Serviço" type="text" list="" id="optioninput#1">
+                    <datalist id="options#1" class="polip_datalist">
+                        <option>Postagens no Instagran</option>
+                        <option>Criação de Logomarca</option>
+                        <option>Divulgação por Anúncios Digitais a aaa aaaaa aaaa aaaaa aaaa</option>
+                        <option>Divulgação por Google Ads</option>
+                        <option>Criação de Vídeo Propaganda</option>
+                        <option>Divulgação no YouTube</option>
+                        <option>Avaliação da Marca</option>
+                        <option>Design de Panfletos</option>
+                    </datalist>
+                </div>
+            </form>
+            
+            <div class="poli_card">
+                <div class="poli_card_icons">
+                    <i class="fa fa-instagram"></i>
+                    <i class="fas fa-trash"></i>
+                </div>
+                <div class="poli_card_text">
+                    Postagens no Intagran
+                </div>
             </div>
-            <div class="poli_card_text">
-                L'bron James
+            <div class="poli_card">
+                <div class="poli_card_icons">
+                    <i class="fas fa-pen"></i>
+                    <i class="fas fa-trash"></i>
+                </div>
+                <div class="poli_card_text">
+                    Criação de Logomarca
+                </div>
+            </div>
+            <div class="poli_card">
+                <div class="poli_card_icons">
+                    <i class="fas fa-ad"></i>
+                    <i class="fas fa-trash"></i>
+                </div>
+                <div class="poli_card_text">
+                    Divulgação por Anúncios Digitais
+                </div>
             </div>
         </div>
     </div>
+    <script src='main.js'></script>
 </body>
 </html>
