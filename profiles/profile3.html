@@ -13,23 +13,30 @@
 </head>
 <body>
     <div>
-        <div class="back_icon">
-            <i class="fas fa-arrow-left poli_back"></i>
+        <div class="upper_btns">
+            <a href="../index.html"><i class="fas fa-arrow-left poli_back"></i></a>
         </div>
-        <div class="poli_card_text desc_profile">
-            <span class="desc_profile"><strong>Jeff Bezos</strong></span>
-            <ul>
-                <li>Formado em Economia em Harvard</li>
-                <li>Especialista em criar negócios de vendas</li>
-                <li>Preferência em negócios grandes</li>
-                <li>Já atendeu: mais de 10000 outros usuários</li>
-            </ul>
-            <label class="desc_profile">Link Portifolio: www.mokup.com</label>
+        <div class="fill desc_profile">
+            <div class="description">
+                <span class="desc_profile"><strong>Bill Gates</strong></span>
+                <ul>
+                    <li>Trancou a faculdade na Universidade Harvard</li>
+                    <li>Conhecido por seu envolvimento em atividades filantrópicas</li>
+                    <li>Um dos homens mais ricos do mundo</li>
+                    <li>Co-fundador da Microsoft</li>
+                </ul>
+                <label class="desc_profile">Link Portifolio: www.mokup.com</label>
+            </div>
+            <div onclick="window.location.href='./info_profiles/info_profile3.html'" class="profile_img">
+                <a href="profile1.html" class="next">
+                    <i class="fas fa-arrow-right poli_back"></i>
+                </a>
+                <a href="profile2.html" class="previous">
+                    <i class="fas fa-arrow-left poli_back"></i>
+                </a>
+                <img src="../img/perfil3.PNG">
+            </div>
         </div>
-        <div>
-        <img class="profile_img" src="../img/perfil3.PNG" id="profile_img2" onclick="nextPage3()">
-        </div>
-        <a href="./profile2.html" class="polip_button">Perfil 2</a>
     </div>
 </body>
 </html>

@@ -13,6 +13,11 @@
     --poli-dark-gray: rgb(100, 100, 100);
 }
 
+a {
+    color: unset;
+    text-decoration: none;
+}
+
 body {
     font-family: 'JetBrains Mono';
     background-color: var(--poli-dark-purple);
@@ -134,7 +139,16 @@ textarea:focus, input:focus{
     flex-direction: column;
 }
 .poli_card > i.fa-camera {
-    font-size: 2.5em;
+    font-size: 4em;
+}
+.poli_card_row {
+    width: 250px;
+    flex-direction: row;
+    height: auto;
+    min-height: unset;
+}
+.poli_card_row > .poli_card_icons {
+    width: 25% !important;
 }
 
 .poli_card .poli_card_icons {
@@ -184,8 +198,17 @@ textarea:focus, input:focus{
 }
 .profile_img {
     width: 100%;
-    flex-grow: 1;
     height: 100%;
+    flex-grow: 1;
+    margin: 0;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+.profile_img > img {
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
     margin: 0;
     object-fit: cover;
 }
@@ -220,4 +243,30 @@ textarea:focus, input:focus{
 
 a {
     margin: 0 !important;
+}
+
+.next, .previous {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    opacity: 0;
+    z-index: 100;
+    transition: all 500ms;
+}
+.previous {
+    left: 0;
+}
+.next {
+    right: 0;
+    
+}
+.description {
+    padding: 1em;
+}
+.previous:hover, .next:hover {
+    background-color: #000000;
+    opacity: 1;
 }
